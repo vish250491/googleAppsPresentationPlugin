@@ -40,5 +40,15 @@
                     return deferred.promise;
                 }
             }
+        }])
+        .factory("Utils", [ function () {
+            return {
+                validateUrl: function (url) {
+
+                    var regExp = /^https?:\/\/.+\/presentation\/.+/;
+                    return regExp.test(url);
+                }
+
+            }
         }]);
 })(window.angular, window.buildfire);

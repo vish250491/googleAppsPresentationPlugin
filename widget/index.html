@@ -32,9 +32,13 @@
   <link rel="stylesheet" href="../../../styles/transitionAnimation.css">
 
 </head>
-<body class="no-scroll">
-<div>
-
+<body>
+<div class="content"
+     style="-webkit-overflow-scrolling: touch !important;overflow: auto; height: 100%;"
+     ng-controller="WidgetHomeCtrl as WidgetHome">
+  <iframe src="{{WidgetHome.data.content.url | returnUrl }}"
+          ng-if="WidgetHome.data.content.url"
+          style="height: 100%;position: relative"></iframe>
 </div>
 </body>
 </html>
