@@ -60,7 +60,7 @@ describe('Unit: googleAppsPresentationWidget app', function () {
       it('it should pass if WidgetHome.init is called for error', function () {
         var result= {};
         WidgetHome.init();
-    //    WidgetHome.success()
+       WidgetHome.success({data:{content:{}}})
       });
       it('it should pass if WidgetHome.init is called for error', function () {
         WidgetHome.init();
@@ -69,10 +69,10 @@ describe('Unit: googleAppsPresentationWidget app', function () {
 
       it('it should pass if  WidgetHome.onUpdateCallback is called for error', function () {
         var event = {
-          tag:TAG_NAMES.JOT_FORM_DATA
+          tag:TAG_NAMES.GOOGLE_APPS_PRESENTATION_INFO
         }
         WidgetHome.data= {
-          design:""
+          content:""
         }
               WidgetHome.onUpdateCallback(event)
       });

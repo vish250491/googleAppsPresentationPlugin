@@ -26,12 +26,8 @@
                     }
                 };
                 ContentHome.error = function (err) {
-                    if (err && err.code !== STATUS_CODE.NOT_FOUND) {
                         console.error('Error while getting data', err);
-                    }
-                    else if (err && err.code === STATUS_CODE.NOT_FOUND) {
-                        ContentHome.saveData(JSON.parse(angular.toJson(ContentHome.data)), TAG_NAMES.GOOGLE_APPS_PRESENTATION_INFO);
-                    }
+
                 };
                 DataStore.get(TAG_NAMES.GOOGLE_APPS_PRESENTATION_INFO).then(ContentHome.success, ContentHome.error);
             };

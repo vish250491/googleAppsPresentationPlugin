@@ -54,13 +54,16 @@ describe('Unit: googleAppsPresentationPluginContent content app', function () {
         ContentHome.clearData();
       });
 
-      xit('it should pass if ContentHome.validateUrl is called with success', function () {
+      it('it should pass if ContentHome.validateUrl is called with success', function () {
         ContentHome.validateUrl();
-        ContentHome.data={
-          content:''
-        }
         var result  = true;
-        ContentHome.success(result);
+        ContentHome.success({data:{content:{}}});
+      });
+
+      it('it should pass if ContentHome.validateUrl is called with success', function () {
+        ContentHome.validateUrl();
+        var result  = true;
+        ContentHome.error({data:{content:{}}});
       });
 
       it('it should pass if ContentHome.validateUrl is called with error', function () {

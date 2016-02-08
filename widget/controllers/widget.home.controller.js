@@ -28,8 +28,6 @@
         WidgetHome.onUpdateCallback = function (event) {
           if (event && event.tag === TAG_NAMES.GOOGLE_APPS_PRESENTATION_INFO) {
             WidgetHome.data = event.data;
-            if (WidgetHome.data&&!WidgetHome.data.design)
-              WidgetHome.data.design = {};
             if (WidgetHome.data&&!WidgetHome.data.content)
               WidgetHome.data.content = {};
           }
