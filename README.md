@@ -1,2 +1,2 @@
-# simpleSliderPlugin
-Simple carousel images plugin
+# googleAppsPresentationPlugin
+google Apps Presentation Plugin
