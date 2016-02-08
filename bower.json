@@ -1,20 +1,13 @@
 {
-  "name": "googleAppPresentation-plugin",
+  "name": "jotformPlugin",
   "version": "0.0.0",
-  "authors": [
-    "vishnusinghshekhawat <vish250491@gmail.com>"
-  ],
-  "description": "\"googleAppPresentation-plugin\"",
-  "moduleType": [
-    "node"
-  ],
-  "keywords": [
-    "googleAppPresentation-plugin",
-    "testing",
-    "buildfire",
-    "karma",
-    "jasmine\""
-  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "angular": "~1.4.3",
+    "angular-mocks": "~1.4.3",
+    "angular-animate": "~1.4.3",
+    "angular-bootstrap": "~0.13.3"
+  },
   "license": "MIT",
   "ignore": [
     "**/.*",
@@ -22,19 +15,5 @@
     "bower_components",
     "test",
     "tests"
-  ],
-  "devDependencies": {
-    "angular": "~1.4.2",
-    "angular-mocks": "~1.4.2",
-    "jquery": "~2.1.4",
-    "angular-bootstrap": "~0.13.3",
-    "angular-route": "~1.4.0",
-    "angular-animate": "~1.4.3",
-    "tinymce":"*"
-  },
-  "dependencies": {
-    "ng-file-upload-shim": "~10.1.5",
-    "ng-file-upload": "~10.1.5",
-    "moment": "~2.10.6"
-  }
+  ]
 }

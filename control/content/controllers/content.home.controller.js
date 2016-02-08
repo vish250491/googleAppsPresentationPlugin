@@ -46,7 +46,6 @@
                             ContentHome.saveData(JSON.parse(angular.toJson(ContentHome.data)), TAG_NAMES.GOOGLE_APPS_PRESENTATION_INFO);
                 }else{
                     ContentHome.isUrlValidated = false;
-                    console.log("?????????error", err)
                 }
 
                 $timeout(function () {
