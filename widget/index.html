@@ -6,8 +6,9 @@
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0,minimum-scale=1.0,
         maximum-scale=1.0">
+    <meta name=”viewport” content=”width=320, initial-scale=.9″>
 
-  <!-- CSS -->
+    <!-- CSS -->
   <link href="../../../styles/helper.css" rel="stylesheet">
   <link href="../../../styles/siteIcons.css" rel="stylesheet">
   <link rel="stylesheet" href="../../../styles/appStyle.css">
@@ -38,7 +39,7 @@
      ng-controller="WidgetHomeCtrl as WidgetHome">
   <iframe src="{{WidgetHome.data.content.url | returnUrl }}"
           ng-if="WidgetHome.data.content.url"
-          style="height: 100%;position: relative" width="300" height="480" frameborder="0" scrolling="no"  webkitAllowFullScreen mozallowfullscreen allowfullscreen=""></iframe>
+          style="height: 100%;position: relative"   frameborder="0"  webkitAllowFullScreen mozallowfullscreen allowfullscreen=""></iframe>
 </div>
 </body>
 </html>

@@ -1,2 +1,2 @@
-# googleAppsPresentationPlugin
-google Apps Presentation Plugin
+# googleSlidesPlugin
+googleSlidesPlugin
